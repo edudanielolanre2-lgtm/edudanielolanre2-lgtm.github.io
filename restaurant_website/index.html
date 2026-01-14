@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxe Dining - Premium Restaurant Experience</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header>
+    <nav class="navbar container">
+      <div class="logo">🍽️ LUXE DINING</div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reservations">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Luxe Dining</h1>
+    <p>Experience culinary excellence in an elegant atmosphere</p>
+    <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem;">
+      <a href="menu.html" class="btn">Explore Menu</a>
+      <a href="#reservations" class="btn btn-secondary">Book a Table</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Our Restaurant</h2>
+      
+      <div class="about-grid">
+        <div class="about-content">
+          <h3>Culinary Excellence Since 2026</h3>
+          </h3>
+          <p>
+            At Luxe Dining, we believe that great food is an art form. Our award-winning chefs 
+            craft exquisite dishes using only the finest, locally-sourced ingredients. Each plate 
+            tells a story of passion, innovation, and traditional technique.
+          </p>
+          <p>
+            Our restaurant has been recognized by prestigious culinary organizations and continues 
+            to push the boundaries of modern gastronomy. We welcome you to join us on a culinary 
+            journey that will delight your senses.
+          </p>
+
+          <div class="features">
+            <div class="feature">
+              <div class="feature-icon">🏆</div>
+              <div>
+                <h4>Award-Winning Chefs</h4>
+                <p>Michelin-trained culinary experts</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🍃</div>
+              <div>
+                <h4>Local Ingredients</h4>
+                <p>Farm-to-table sustainability</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🍷</div>
+              <div>
+                <h4>Wine Selection</h4>
+                <p>Curated vintages from around the world</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">👥</div>
+              <div>
+                <h4>Exceptional Service</h4>
+                <p>Dedicated to your perfect experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-image">
+          <span>📸 Restaurant Image Placeholder</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Menu Preview -->
+  <section class="featured-menu">
+    <div class="container">
+      <h2 class="section-title">Featured Dishes</h2>
+      
+      <div class="menu-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="appetizers">Appetizers</button>
+        <button class="filter-btn" data-filter="mains">Main Courses</button>
+        <button class="filter-btn" data-filter="desserts">Desserts</button>
+      </div>
+
+      <div class="menu-grid">
+        <!-- Appetizers -->
+        <div class="menu-item" data-category="appetizers">
+          <div class="menu-item-image" style="background: linear-gradient(135deg, #f39c12 0%, #e74c3c 100%);">
+            🦐 Scallop Tartare
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-name">Scallop Tartare</div>
+            <div class="menu-item-description">Diced scallops with citrus, avocado, and crispy toast points</div>
+            <div class="menu-item-footer">
+              <span class="price">$18</span>
+              <span class="calories">180 cal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="appetizers">
+          <div class="menu-item-image" style="background: linear-gradient(135deg, #27ae60 0%, #229954 100%);">
+            🍄 Truffle Risotto
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-name">Truffle Risotto</div>
+            <div class="menu-item-description">Creamy arborio risotto with black truffle and parmesan</div>
+            <div class="menu-item-footer">
+              <span class="price">$16</span>
+              <span class="calories">320 cal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="appetizers">
+          <div class="menu-item-image" style="background: linear-gradient(135deg, #8e44ad 0%, #6c3483 100%);">
+            🌶️ Spiced Octopus
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-name">Spiced Octopus</div>
+            <div class="menu-item-description">Grilled octopus with paprika oil, potato, and olives</div>
+            <div class="menu-item-footer">
+              <span class="price">$19</span>
+              <span class="calories">220 cal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Courses -->
+        <div class="menu-item" data-category="mains">
+          <div class="menu-item-image" style="background: linear-gradient(135deg, #c0392b 0%, #a93226 100%);">
+            🥩 Prime Ribeye
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-name">Prime Ribeye Steak</div>
+            <div class="menu-item-description">14oz USDA prime ribeye, truffle butter, roasted vegetables</div>
+            <div class="menu-item-footer">
+              <span class="price">$48</span>
+              <span class="calories">650 cal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="mains">
+          <div class="menu-item-image" style="background: linear-gradient(135deg, #2980b9 0%, #1f618d 100%);">
+            🐟 Pan-Seared Halibut
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-name">Pan-Seared Halibut</div>
+            <div class="menu-item-description">Fresh Atlantic halibut with lemon sauce and seasonal greens</div>
+            <div class="menu-item-footer">
+              <span class="price">$38</span>
+              <span class="calories">380 cal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="mains">
+          <div class="menu-item-image" style="background: linear-gradient(135deg, #d4af37 0%, #c9a227 100%);">
+            🦆 Duck Breast
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-name">Duck Breast Confit</div>
+            <div class="menu-item-description">Cherry gastrique, potato terrine, and duck fat jus</div>
+            <div class="menu-item-footer">
+              <span class="price">$42</span>
+              <span class="calories">520 cal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-item" data-category="desserts">
+          <div class="menu-item-image" style="background: linear-gradient(135deg, #8B4513 0%, #6B3410 100%);">
+            🍫 Chocolate Soufflé
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-name">Chocolate Soufflé</div>
+            <div class="menu-item-description">70% dark chocolate with raspberry compote and ice cream</div>
+            <div class="menu-item-footer">
+              <span class="price">$14</span>
+              <span class="calories">420 cal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="desserts">
+          <div class="menu-item-image" style="background: linear-gradient(135deg, #FFB6C1 0%, #FF69B4 100%);">
+            🍓 Berry Tart
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-name">Mixed Berry Tart</div>
+            <div class="menu-item-description">Fresh berries, vanilla bean cream, almond pastry</div>
+            <div class="menu-item-footer">
+              <span class="price">$12</span>
+              <span class="calories">280 cal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="desserts">
+          <div class="menu-item-image" style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);">
+            🍊 Passion Fruit Panna Cotta
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-name">Passion Fruit Panna Cotta</div>
+            <div class="menu-item-description">Silky Italian custard with passion fruit coulis</div>
+            <div class="menu-item-footer">
+              <span class="price">$13</span>
+              <span class="calories">240 cal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">What Our Guests Say</h2>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">
+            "The most exquisite dining experience I've ever had. Every course was a masterpiece, 
+            and the service was impeccable. I'm already planning my next visit!"
+          </div>
+          <div class="testimonial-author">- Sarah Mitchell</div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">
+            "Outstanding! The chef's attention to detail is remarkable. This restaurant sets 
+            the gold standard for fine dining in the city."
+          </div>
+          <div class="testimonial-author">- James Rodriguez</div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">
+            "Perfect for a special occasion. The ambiance is elegant, the food is divine, 
+            and the wine pairing suggestions were absolutely spot-on!"
+          </div>
+          <div class="testimonial-author">- Emily Chen</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservations Section -->
+  <section id="reservations" class="contact" style="padding: 60px 2rem;">
+    <div class="container">
+      <h2 class="section-title">Book Your Table</h2>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3 style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 2rem;">
+            Reserve Your Seat
+          </h3>
+          
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>123 Culinary Avenue<br>Fine City, FC 12345</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <p>(555) 123-4567</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div class="contact-details">
+              <h4>Hours</h4>
+              <p>Tue-Thu: 5:00 PM - 10:00 PM<br>
+                Fri-Sat: 5:00 PM - 11:00 PM<br>
+                Sun: 5:00 PM - 9:00 PM<br>
+                Closed Mondays</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="time">Preferred Time</label>
+              <input type="time" id="time" name="time" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="guests">Number of Guests</label>
+              <select id="guests" name="guests" required>
+                <option value="">Select...</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6+ Guests</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="special-requests">Special Requests</label>
+            <textarea id="special-requests" name="special-requests" 
+              placeholder="Any dietary restrictions or special occasions?"></textarea>
+          </div>
+
+          <button type="submit" class="btn">Reserve Table</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-section">
+        <h4>Luxe Dining</h4>
+        <p>Experience culinary excellence and fine dining at its best.</p>
+        <div class="social-links">
+          <a href="#" title="Facebook">f</a>
+          <a href="#" title="Instagram">📷</a>
+          <a href="#" title="Twitter">𝕏</a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="#reservations">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Hours</h4>
+        <ul>
+          <li>Tue-Thu: 5:00 PM - 10:00 PM</li>
+          <li>Fri-Sat: 5:00 PM - 11:00 PM</li>
+          <li>Sunday: 5:00 PM - 9:00 PM</li>
+          <li>Monday: Closed</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Newsletter</h4>
+        <p>Subscribe for special offers and events</p>
+        <form style="margin-top: 1rem;">
+          <div style="display: flex; gap: 0.5rem;">
+            <input type="email" placeholder="Your email" style="flex: 1; padding: 0.5rem; border: none; border-radius: 3px;">
+            <button type="submit" class="btn" style="padding: 0.5rem 1rem;">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Luxe Dining. All rights reserved. | 
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Service</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

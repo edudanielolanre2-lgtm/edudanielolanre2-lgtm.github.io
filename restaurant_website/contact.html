@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Reservations - Luxe Dining</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header>
+    <nav class="navbar container">
+      <div class="logo">🍽️ LUXE DINING</div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#reservations">Reservations</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contact Hero -->
+  <section class="hero" style="background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(196, 30, 58, 0.7));">
+    <h1>Get In Touch</h1>
+    <p>We'd love to hear from you. Contact us for reservations, inquiries, or feedback.</p>
+  </section>
+
+  <!-- Main Contact Section -->
+  <section class="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Information</h2>
+
+      <div class="contact-grid">
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-details">
+              <h4>Address</h4>
+              <p>123 Culinary Avenue<br>
+                Fine City, FC 12345<br>
+                United States</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <p><a href="tel:+15551234567" style="color: var(--primary-color);">+1 (555) 123-4567</a><br>
+                Reservations: ext. 1<br>
+                General Inquiries: ext. 2</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p><a href="mailto:info@luxedining.com" style="color: var(--primary-color);">info@luxedining.com</a><br>
+                <a href="mailto:reservations@luxedining.com" style="color: var(--primary-color);">reservations@luxedining.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div class="contact-details">
+              <h4>Hours of Operation</h4>
+              <p>Tuesday - Thursday: 5:00 PM - 10:00 PM<br>
+                Friday - Saturday: 5:00 PM - 11:00 PM<br>
+                Sunday: 5:00 PM - 9:00 PM<br>
+                <strong style="color: var(--primary-color);">Monday: Closed</strong></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">🌐</div>
+            <div class="contact-details">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+                <a href="#" title="Facebook" style="background: #3b5998; color: white;">f</a>
+                <a href="#" title="Instagram" style="background: #E4405F; color: white;">📷</a>
+                <a href="#" title="Twitter" style="background: #1DA1F2; color: white;">𝕏</a>
+                <a href="#" title="TikTok" style="background: #000; color: white;">♪</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form">
+          <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Send us a Message</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name *</label>
+              <input type="text" id="fname" name="fname" required>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name *</label>
+              <input type="text" id="lname" name="lname" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="cemail">Email Address *</label>
+            <input type="email" id="cemail" name="cemail" required>
+          </div>
+
+          <div class="form-group">
+            <label for="cphone">Phone Number</label>
+            <input type="tel" id="cphone" name="cphone">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a subject...</option>
+              <option value="reservation">Reservation Inquiry</option>
+              <option value="event">Private Event</option>
+              <option value="catering">Catering Request</option>
+              <option value="feedback">Feedback</option>
+              <option value="careers">Careers</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="cmessage">Message *</label>
+            <textarea id="cmessage" name="cmessage" required 
+              placeholder="Please tell us how we can help you..."></textarea>
+          </div>
+
+          <div class="form-group" style="display: flex; gap: 0.5rem; align-items: center;">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent" style="margin: 0;">I agree to be contacted about my message *</label>
+          </div>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservations Section -->
+  <section style="padding: 80px 2rem; background: var(--light-bg);">
+    <div class="container">
+      <h2 class="section-title">Make a Reservation</h2>
+
+      <div class="contact-grid">
+        <!-- Reservation Info -->
+        <div style="padding: 2rem; background: white; border-radius: 8px; box-shadow: var(--shadow);">
+          <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Book Your Table</h3>
+
+          <div style="margin-bottom: 2rem;">
+            <h4 style="color: var(--secondary-color); margin-bottom: 1rem;">Reservation Policy</h4>
+            <ul style="line-height: 2; color: #666;">
+              <li>✓ Reservations can be made up to 3 months in advance</li>
+              <li>✓ Minimum party size: 2 guests</li>
+              <li>✓ Maximum party size: 12 guests</li>
+              <li>✓ A credit card is required to hold the reservation</li>
+              <li>✓ Please arrive 15 minutes before your reservation time</li>
+              <li>✓ Cancellation must be made 24 hours in advance</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 style="color: var(--secondary-color); margin-bottom: 1rem;">Special Occasions</h4>
+            <p style="color: #666; margin-bottom: 1rem;">
+              We love celebrating special moments! Let us know if you're celebrating a birthday, 
+              anniversary, or other special occasion. We'll do our best to make it memorable.
+            </p>
+            <p style="color: var(--primary-color); font-weight: 600;">
+              📧 Email: <a href="mailto:reservations@luxedining.com">reservations@luxedining.com</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Reservation Form -->
+        <form class="contact-form">
+          <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Reserve Now</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="rname">Name *</label>
+              <input type="text" id="rname" name="rname" required>
+            </div>
+            <div class="form-group">
+              <label for="remail">Email *</label>
+              <input type="email" id="remail" name="remail" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="rphone">Phone Number *</label>
+              <input type="tel" id="rphone" name="rphone" required>
+            </div>
+            <div class="form-group">
+              <label for="rdate">Date *</label>
+              <input type="date" id="rdate" name="rdate" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="rtime">Time *</label>
+              <input type="time" id="rtime" name="rtime" required>
+            </div>
+            <div class="form-group">
+              <label for="rguests">Number of Guests *</label>
+              <select id="rguests" name="rguests" required>
+                <option value="">Select...</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+                <option value="7">7 Guests</option>
+                <option value="8">8 Guests</option>
+                <option value="9">9 Guests</option>
+                <option value="10">10 Guests</option>
+                <option value="11">11 Guests</option>
+                <option value="12">12 Guests</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="occasion">Occasion (Optional)</label>
+            <input type="text" id="occasion" name="occasion" 
+              placeholder="e.g., Birthday, Anniversary, Celebration">
+          </div>
+
+          <div class="form-group">
+            <label for="requests">Special Requests</label>
+            <textarea id="requests" name="requests" 
+              placeholder="Dietary restrictions, seating preferences, etc..."></textarea>
+          </div>
+
+          <button type="submit" class="btn">Complete Reservation</button>
+          
+          <p style="font-size: 0.9rem; color: #666; margin-top: 1rem;">
+            By submitting this reservation request, you agree to our reservation policy. 
+            You'll receive a confirmation email with your booking details.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Private Events Section -->
+  <section style="padding: 80px 2rem;">
+    <div class="container">
+      <h2 class="section-title">Private Events & Catering</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: var(--shadow); text-align: center;">
+          <h3 style="color: var(--primary-color); font-size: 1.5rem; margin-bottom: 1rem;">💑 Intimate Celebrations</h3>
+          <p style="color: #666; line-height: 1.8;">
+            Perfect for anniversaries, engagements, and romantic dinners. Customize your experience 
+            with our special tasting menus.
+          </p>
+        </div>
+
+        <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: var(--shadow); text-align: center;">
+          <h3 style="color: var(--primary-color); font-size: 1.5rem; margin-bottom: 1rem;">👥 Corporate Events</h3>
+          <p style="color: #666; line-height: 1.8;">
+            Host your business meetings, team dinners, and corporate celebrations in our elegant 
+            private dining rooms.
+          </p>
+        </div>
+
+        <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: var(--shadow); text-align: center;">
+          <h3 style="color: var(--primary-color); font-size: 1.5rem; margin-bottom: 1rem;">🎉 Grand Celebrations</h3>
+          <p style="color: #666; line-height: 1.8;">
+            Celebrate weddings, milestone birthdays, and special occasions with a custom-designed 
+            menu and service.
+          </p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <p style="font-size: 1.1rem; color: #666; margin-bottom: 1.5rem;">
+          For private events and catering inquiries, please contact our events team:
+        </p>
+        <a href="mailto:events@luxedining.com" class="btn">Plan Your Event</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section style="padding: 80px 2rem; background: var(--light-bg);">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div style="background: white; margin-bottom: 1rem; border-radius: 8px; box-shadow: var(--shadow); overflow: hidden;">
+          <button class="accordion-header" style="width: 100%; padding: 1.5rem; text-align: left; background: #f8f9fa; border: none; cursor: pointer; font-size: 1rem; font-weight: 600; color: var(--secondary-color); display: flex; justify-content: space-between; align-items: center;">
+            <span>Do you accommodate dietary restrictions?</span>
+            <span>+</span>
+          </button>
+          <div class="accordion-body" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+            <div style="padding: 1.5rem; color: #666;">
+              <p>
+                Absolutely! We cater to vegetarian, vegan, gluten-free, and other dietary needs. 
+                Please mention any restrictions when making your reservation, and our chefs will 
+                prepare special dishes for you.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: white; margin-bottom: 1rem; border-radius: 8px; box-shadow: var(--shadow); overflow: hidden;">
+          <button class="accordion-header" style="width: 100%; padding: 1.5rem; text-align: left; background: #f8f9fa; border: none; cursor: pointer; font-size: 1rem; font-weight: 600; color: var(--secondary-color); display: flex; justify-content: space-between; align-items: center;">
+            <span>What is the dress code?</span>
+            <span>+</span>
+          </button>
+          <div class="accordion-body" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+            <div style="padding: 1.5rem; color: #666;">
+              <p>
+                Smart casual to formal attire is requested. We recommend business casual or 
+                cocktail dress. No athletic wear or tank tops, please.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: white; margin-bottom: 1rem; border-radius: 8px; box-shadow: var(--shadow); overflow: hidden;">
+          <button class="accordion-header" style="width: 100%; padding: 1.5rem; text-align: left; background: #f8f9fa; border: none; cursor: pointer; font-size: 1rem; font-weight: 600; color: var(--secondary-color); display: flex; justify-content: space-between; align-items: center;">
+            <span>Can I bring children to the restaurant?</span>
+            <span>+</span>
+          </button>
+          <div class="accordion-body" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+            <div style="padding: 1.5rem; color: #666;">
+              <p>
+                Yes, children are welcome during regular dining hours. We have a kids menu available 
+                and will ensure they have an enjoyable experience.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: white; margin-bottom: 1rem; border-radius: 8px; box-shadow: var(--shadow); overflow: hidden;">
+          <button class="accordion-header" style="width: 100%; padding: 1.5rem; text-align: left; background: #f8f9fa; border: none; cursor: pointer; font-size: 1rem; font-weight: 600; color: var(--secondary-color); display: flex; justify-content: space-between; align-items: center;">
+            <span>Is there a dress code for private events?</span>
+            <span>+</span>
+          </button>
+          <div class="accordion-body" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+            <div style="padding: 1.5rem; color: #666;">
+              <p>
+                Dress code varies by event. We'll discuss specific requirements with you during 
+                your event planning consultation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: white; border-radius: 8px; box-shadow: var(--shadow); overflow: hidden;">
+          <button class="accordion-header" style="width: 100%; padding: 1.5rem; text-align: left; background: #f8f9fa; border: none; cursor: pointer; font-size: 1rem; font-weight: 600; color: var(--secondary-color); display: flex; justify-content: space-between; align-items: center;">
+            <span>Do you accept walk-ins?</span>
+            <span>+</span>
+          </button>
+          <div class="accordion-body" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+            <div style="padding: 1.5rem; color: #666;">
+              <p>
+                Walk-ins are accommodated based on availability, but we recommend making a 
+                reservation to ensure you have a table. Call ahead or book online.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-section">
+        <h4>Luxe Dining</h4>
+        <p>Experience culinary excellence and fine dining at its best.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="index.html#reservations">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Hours</h4>
+        <ul>
+          <li>Tue-Thu: 5:00 PM - 10:00 PM</li>
+          <li>Fri-Sat: 5:00 PM - 11:00 PM</li>
+          <li>Sunday: 5:00 PM - 9:00 PM</li>
+          <li>Monday: Closed</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>📍 123 Culinary Avenue<br>
+           📞 (555) 123-4567<br>
+           📧 info@luxedining.com
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Luxe Dining. All rights reserved. | 
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Service</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Luxe Dining</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header>
+    <nav class="navbar container">
+      <div class="logo">🍽️ LUXE DINING</div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#reservations">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Menu Hero Section -->
+  <section class="menu-hero">
+    <h1>Our Exquisite Menu</h1>
+    <p>Discover culinary artistry crafted by our award-winning chefs</p>
+  </section>
+
+  <!-- Menu Search and Filters -->
+  <section class="container" style="padding: 40px 2rem;">
+    <div style="display: flex; gap: 2rem; flex-wrap: wrap; align-items: center; margin-bottom: 2rem;">
+      <input type="text" class="menu-search" placeholder="Search dishes..." >
+        style="flex: 1; min-width: 250px; padding: 12px; border: 2px solid var(--border-color); border-radius: 5px; font-size: 1rem;">
+      
+      <div>
+        <label style="color: var(--secondary-color); font-weight: 600; margin-right: 1rem;">Filter by:</label>
+        <button onclick="filterByDietary('all')" class="filter-btn active" style="margin-right: 0.5rem;">All</button>
+        <button onclick="filterByDietary('vegetarian')" class="filter-btn" style="margin-right: 0.5rem;">Vegetarian</button>
+        <button onclick="filterByDietary('vegan')" class="filter-btn">Vegan</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appetizers Section -->
+  <section class="container">
+    <div class="menu-section">
+      <h2 class="menu-section-title">🍽️ Appetizers</h2>
+      
+      <div class="menu-items">
+        <div class="detailed-menu-item" data-category="appetizers">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Scallop Tartare</div>
+            <div class="menu-item-price">$18</div>
+          </div>
+          <div class="menu-item-description">
+            Diced scallops with citrus, avocado, and crispy toast points
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag">180 cal</span>
+            <span class="tag" onclick="filterByDietary('vegetarian')" style="cursor: pointer;">Pescatarian</span>
+          </div>
+        </div>
+
+        <div class="detailed-menu-item" data-category="appetizers">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Truffle Risotto</div>
+            <div class="menu-item-price">$16</div>
+          </div>
+          <div class="menu-item-description">
+            Creamy arborio risotto with black truffle and parmesan
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag">320 cal</span>
+            <span class="tag vegetarian">Vegetarian</span>
+          </div>
+        </div>
+
+        <div class="detailed-menu-item" data-category="appetizers">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Spiced Octopus</div>
+            <div class="menu-item-price">$19</div>
+          </div>
+          <div class="menu-item-description">
+            Grilled octopus with paprika oil, potato, and olives
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag">220 cal</span>
+            <span class="tag spicy">Spicy</span>
+          </div>
+        </div>
+
+        <div class="detailed-menu-item" data-category="appetizers">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Wild Mushroom Soup</div>
+            <div class="menu-item-price">$12</div>
+          </div>
+          <div class="menu-item-description">
+            Creamy forest mushrooms with truffle oil and fresh herbs
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag">150 cal</span>
+            <span class="tag vegetarian">Vegetarian</span>
+            <span class="tag vegan">Vegan</span>
+          </div>
+        </div>
+
+        <div class="detailed-menu-item" data-category="appetizers">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Foie Gras Terrine</div>
+            <div class="menu-item-price">$28</div>
+          </div>
+          <div class="menu-item-description">
+            Silky foie gras with pistachio and fig compote
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag">450 cal</span>
+          </div>
+        </div>
+
+        <div class="detailed-menu-item" data-category="appetizers">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Vegetable Carpaccio</div>
+            <div class="menu-item-price">$14</div>
+          </div>
+          <div class="menu-item-description">
+            Thinly sliced seasonal vegetables with herb oil
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag">80 cal</span>
+            <span class="tag vegetarian">Vegetarian</span>
+            <span class="tag vegan">Vegan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Courses Section -->
+  <section class="container">
+    <div class="menu-section">
+      <h2 class="menu-section-title">🥘 Main Courses</h2>
+      
+      <div class="menu-items">
+        <div class="detailed-menu-item" data-category="mains">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Prime Ribeye Steak</div>
+            <div class="menu-item-price">$48</div>
+          </div>
+          <div class="menu-item-description">
+            14oz USDA prime ribeye, truffle butter, roasted root vegetables
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag">650 cal</span>
+            <span class="tag">Gluten-Free</span>
+          </div>
+        </div>
+
+        <div class="detailed-menu-item" data-category="mains">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Pan-Seared Halibut</div>
+            <div class="menu-item-price">$38</div>
+          </div>
+          <div class="menu-item-description">
+            Fresh Atlantic halibut with lemon beurre blanc and seasonal greens
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag">380 cal</span>
+            <span class="tag">Pescatarian</span>
+            <span class="tag">Gluten-Free</span>
+          </div>
+        </div>
+
+        <div class="detailed-menu-item" data-category="mains">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Duck Breast Confit</div>
+            <div class="menu-item-price">$42</div>
+          </div>
+          <div class="menu-item-description">
+            Cherry gastrique, potato terrine, duck fat jus
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag">520 cal</span>
+            <span class="tag">Gluten-Free</span>
+          </div>
+        </div>
+
+        <div class="detailed-menu-item" data-category="mains">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Chilean Sea Bass</div>
+            <div class="menu-item-price">$44</div>
+          </div>
+          <div class="menu-item-description">
+            White fish with white miso, asparagus, and sake butter
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag">420 cal</span>
+            <span class="tag">Pescatarian</span>
+            <span class="tag">Gluten-Free</span>
+          </div>
+        </div>
+
+        <div class="detailed-menu-item" data-category="mains">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Vegetable Wellington</div>
+            <div class="menu-item-price">$32</div>
+          </div>
+          <div class="menu-item-description">
+            Roasted vegetables wrapped in puff pastry, mushroom duxelles
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag">380 cal</span>
+            <span class="tag vegetarian">Vegetarian</span>
+          </div>
+        </div>
+
+        <div class="detailed-menu-item" data-category="mains">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Lamb Chops</div>
+            <div class="menu-item-price">$46</div>
+          </div>
+          <div class="menu-item-description">
+            Herb-crusted lamb chops with pomegranate reduction
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag">580 cal</span>
+            <span class="tag">Gluten-Free</span>
+          </div>
+        </div>
+
+        <div class="detailed-menu-item" data-category="mains">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Lobster Tail</div>
+            <div class="menu-item-price">$52</div>
+          </div>
+          <div class="menu-item-description">
+            Butter-poached lobster tail with seasonal vegetables
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag">320 cal</span>
+            <span class="tag">Pescatarian</span>
+            <span class="tag">Gluten-Free</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Side Dishes -->
+  <section class="container">
+    <div class="menu-section">
+      <h2 class="menu-section-title">🥔 Sides</h2>
+      
+      <div class="menu-items">
+        <div class="detailed-menu-item" data-category="sides">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Truffle Mac & Cheese</div>
+            <div class="menu-item-price">$12</div>
+          </div>
+          <div class="menu-item-description">
+            Creamy cheddar and gruyère with black truffle
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag vegetarian">Vegetarian</span>
+          </div>
+        </div>
+
+        <div class="detailed-menu-item" data-category="sides">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Crispy Fries</div>
+            <div class="menu-item-price">$8</div>
+          </div>
+          <div class="menu-item-description">
+            Hand-cut Belgian fries with truffle oil
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag vegetarian">Vegetarian</span>
+            <span class="tag vegan">Vegan</span>
+          </div>
+        </div>
+
+        <div class="detailed-menu-item" data-category="sides">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Grilled Asparagus</div>
+            <div class="menu-item-price">$10</div>
+          </div>
+          <div class="menu-item-description">
+            Charred asparagus with garlic and lemon
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag vegetarian">Vegetarian</span>
+            <span class="tag vegan">Vegan</span>
+            <span class="tag">Gluten-Free</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Desserts Section -->
+  <section class="container">
+    <div class="menu-section">
+      <h2 class="menu-section-title">🍰 Desserts</h2>
+      
+      <div class="menu-items">
+        <div class="detailed-menu-item" data-category="desserts">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Chocolate Soufflé</div>
+            <div class="menu-item-price">$14</div>
+          </div>
+          <div class="menu-item-description">
+            70% dark chocolate with raspberry compote and vanilla ice cream
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag">420 cal</span>
+            <span class="tag vegetarian">Vegetarian</span>
+          </div>
+        </div>
+
+        <div class="detailed-menu-item" data-category="desserts">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Mixed Berry Tart</div>
+            <div class="menu-item-price">$12</div>
+          </div>
+          <div class="menu-item-description">
+            Fresh berries, vanilla bean cream, almond pastry
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag">280 cal</span>
+            <span class="tag vegetarian">Vegetarian</span>
+          </div>
+        </div>
+
+        <div class="detailed-menu-item" data-category="desserts">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Passion Fruit Panna Cotta</div>
+            <div class="menu-item-price">$13</div>
+          </div>
+          <div class="menu-item-description">
+            Silky Italian custard with passion fruit coulis
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag">240 cal</span>
+            <span class="tag vegetarian">Vegetarian</span>
+            <span class="tag">Gluten-Free</span>
+          </div>
+        </div>
+
+        <div class="detailed-menu-item" data-category="desserts">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Crème Brûlée</div>
+            <div class="menu-item-price">$11</div>
+          </div>
+          <div class="menu-item-description">
+            Classic vanilla custard with caramelized sugar top
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag">350 cal</span>
+            <span class="tag vegetarian">Vegetarian</span>
+            <span class="tag">Gluten-Free</span>
+          </div>
+        </div>
+
+        <div class="detailed-menu-item" data-category="desserts">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Tiramisu</div>
+            <div class="menu-item-price">$12</div>
+          </div>
+          <div class="menu-item-description">
+            Ladyfingers, mascarpone, espresso, and cocoa powder
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag">380 cal</span>
+            <span class="tag vegetarian">Vegetarian</span>
+          </div>
+        </div>
+
+        <div class="detailed-menu-item" data-category="desserts">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Lemon Sorbet</div>
+            <div class="menu-item-price">$8</div>
+          </div>
+          <div class="menu-item-description">
+            Light and refreshing frozen lemon dessert
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag">120 cal</span>
+            <span class="tag vegetarian">Vegetarian</span>
+            <span class="tag vegan">Vegan</span>
+            <span class="tag">Gluten-Free</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beverages Section -->
+  <section class="container">
+    <div class="menu-section">
+      <h2 class="menu-section-title">🍷 Beverages</h2>
+      
+      <div class="menu-items">
+        <div class="detailed-menu-item" data-category="beverages">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Selection of Wines</div>
+            <div class="menu-item-price">$12-$150</div>
+          </div>
+          <div class="menu-item-description">
+            Curated selection of wines from around the world
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag">Glass or Bottle</span>
+          </div>
+        </div>
+
+        <div class="detailed-menu-item" data-category="beverages">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Craft Cocktails</div>
+            <div class="menu-item-price">$14-$16</div>
+          </div>
+          <div class="menu-item-description">
+            House-made cocktails with premium spirits
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag">Signature Drinks</span>
+          </div>
+        </div>
+
+        <div class="detailed-menu-item" data-category="beverages">
+          <div class="menu-item-header">
+            <div class="menu-item-title">Coffee & Tea</div>
+            <div class="menu-item-price">$4-$6</div>
+          </div>
+          <div class="menu-item-description">
+            Espresso drinks and premium loose-leaf teas
+          </div>
+          <div class="menu-item-meta">
+            <span class="tag vegetarian">Vegetarian</span>
+            <span class="tag vegan">Vegan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dietary Info -->
+  <section class="container" style="padding: 60px 2rem; text-align: center; background: var(--light-bg); border-radius: 8px; margin: 40px 0;">
+    <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">Dietary Information</h3>
+    <p style="margin-bottom: 1rem;">
+      We cater to various dietary preferences and restrictions. Please inform your server of any allergies or dietary needs.
+    </p>
+    <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+      <span style="display: flex; align-items: center; gap: 0.5rem;">
+        <span class="tag vegetarian">Vegetarian</span>
+      </span>
+      <span style="display: flex; align-items: center; gap: 0.5rem;">
+        <span class="tag vegan">Vegan</span>
+      </span>
+      <span style="display: flex; align-items: center; gap: 0.5rem;">
+        <span class="tag spicy">Spicy</span>
+      </span>
+      <span style="display: flex; align-items: center; gap: 0.5rem;">
+        <span class="tag">Gluten-Free</span>
+      </span>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-section">
+        <h4>Luxe Dining</h4>
+        <p>Experience culinary excellence and fine dining at its best.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="index.html#reservations">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Hours</h4>
+        <ul>
+          <li>Tue-Thu: 5:00 PM - 10:00 PM</li>
+          <li>Fri-Sat: 5:00 PM - 11:00 PM</li>
+          <li>Sunday: 5:00 PM - 9:00 PM</li>
+          <li>Monday: Closed</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>📍 123 Culinary Avenue<br>
+           📞 (555) 123-4567<br>
+           📧 info@luxedining.com
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Luxe Dining. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>
